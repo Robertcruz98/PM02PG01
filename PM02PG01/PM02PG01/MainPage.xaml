@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PG01.MainPage"
+              NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="Green" Padding="23" CornerRadius="0">
+            <Label Text="Operaciones Matematicas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="txtnum1" Placeholder="Ingrese numero 1" Keyboard="Numeric" TextColor="Black" Margin="30,40,30,0" />
+
+        <Entry x:Name="txtnum2" Placeholder="Ingrese numero 2" Keyboard="Numeric" TextColor="Black" Margin="30,10,30,40" />
+
+        <Button Margin="20,20,20,0" TextColor="Black" FontSize="Subtitle" BackgroundColor="LightGreen" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Sumar" x:Name="btnagregar" Clicked="btnagregar_Clicked"></Button>
+        <Button Margin="20,8,20,0" TextColor="Black" FontSize="Subtitle" BackgroundColor="LightGreen" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Restar" x:Name="btnrestar" Clicked="btnrestar_Clicked"></Button>
+        <Button Margin="20,8,20,0" TextColor="Black" FontSize="Subtitle" BackgroundColor="LightGreen" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Dividir" x:Name="btndividir" Clicked="btndividir_Clicked"></Button>
+        <Button Margin="20,8,20,0" TextColor="Black" FontSize="Subtitle" BackgroundColor="LightGreen" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Multiplicar" x:Name="btnmultiplicar" Clicked="btnmultiplicar_Clicked"></Button>
+
+        
+    </StackLayout>
+
+</ContentPage>

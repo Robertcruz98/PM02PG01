@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PG01.Views.BindingPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="Green" Padding="24" CornerRadius="0">
+                <Label Text="Captura de Datos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            
+            <Label Text="Nombre" TextColor="Black" Margin="20,20,0,0"></Label>
+            <Entry x:Name="txtnombre" Margin="20,0,20,0"></Entry>
+
+            <Label Text="Apellido" TextColor="Black" Margin="20,20,0,0"></Label>
+            <Entry x:Name="txtapellido" Margin="20,0,20,0"></Entry>
+
+            <Label Text="Edad" TextColor="Black" Margin="20,20,0,0"></Label>
+            <Entry x:Name="txtedad" Keyboard="Numeric" Margin="20,0,20,0"></Entry>
+
+            <Label Text="Correo" TextColor="Black" Margin="20,20,0,0"></Label>
+            <Entry x:Name="txtcorreo" Keyboard="Email" Margin="20,0,20,0"></Entry>
+
+            <Button Margin="20,20,20,0" x:Name="btnbinding" TextColor="Black" FontSize="Subtitle" BackgroundColor="LightGreen" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Enviar" Clicked="btnbinding_Clicked"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

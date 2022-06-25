@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PG01.MenuPage"
+              BackgroundImageSource="fond.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Margin="20, 85,20,0" x:Name="btnApp1" TextColor="black" FontSize="Title" BackgroundColor="green" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Funciones Matematicas" Clicked="btnApp1_Clicked"></Button>
+            <Button Margin="20, 8,20,0" x:Name="btnApp2" TextColor="Black" FontSize="Title" BackgroundColor="green" 
+                   CornerRadius="20" WidthRequest="50" HeightRequest="50" Text="Informacion" Clicked="btnApp2_Clicked"></Button>
+
+            <Label Padding="120, 340" TextColor="green" FontSize="Subtitle" Text="Creado Por: Robert Cruz"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+   
